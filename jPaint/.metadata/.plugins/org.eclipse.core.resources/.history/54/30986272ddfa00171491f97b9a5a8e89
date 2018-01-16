@@ -1,0 +1,49 @@
+package main;
+
+import java.awt.Shape;
+
+import view.EventName;
+import view.gui.Gui;
+import view.gui.GuiWindow;
+import view.gui.PaintCanvas;
+import view.interfaces.IDialogChoice;
+
+public class main {
+	public static void main(String[] args){
+	
+	PaintCanvas pc = new PaintCanvas();
+	GuiWindow gw = new GuiWindow(pc);
+	Gui g = new Gui(gw);
+	
+	}
+
+}
+
+class ChooseShape implements IDialogChoice<Shape> {
+
+	@Override
+	public Shape getCurrentSelection() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Shape[] getDialogOptions() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getDialogText() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getDialogTitle() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}
+

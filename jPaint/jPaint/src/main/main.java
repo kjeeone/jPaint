@@ -1,0 +1,66 @@
+package main;
+
+import java.awt.Shape;
+
+import view.EventName;
+import view.gui.Gui;
+import view.gui.GuiWindow;
+import view.gui.PaintCanvas;
+import view.interfaces.IDialogChoice;
+import view.interfaces.IPaintCanvas;
+import view.interfaces.IUiModule;
+
+import view.interfaces.IEventCallback;
+public class main {
+	public static void main(String[] args){
+	
+	PaintCanvas pc = new PaintCanvas();
+	GuiWindow gw = new GuiWindow(pc);
+	Gui g = new Gui(gw);
+	ChooseShape cs = new ChooseShape();
+	callBack cb = new callBack();
+	
+	
+	g.getDialogResponse(cs);
+	}
+
+}
+
+class ChooseShape implements IDialogChoice<Shape> {
+	
+	@Override
+	public Shape getCurrentSelection() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Shape[] getDialogOptions() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getDialogText() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getDialogTitle() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}
+
+class callBack implements IEventCallback {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+}
+
+
